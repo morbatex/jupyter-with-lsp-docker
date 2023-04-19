@@ -25,7 +25,7 @@ jobs:
         id: dockertag
         uses: tmelliottjr/extract-regex-action@v1.4.0
         with:
-          regex: '^FROM.*:(.*)'
+          regex: ':(.*)'
           flags: "gm"
           input: ${{ steps.dockerfile.outputs.content }}
       
