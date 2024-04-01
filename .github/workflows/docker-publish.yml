@@ -23,7 +23,7 @@ jobs:
           
       - name: Extract docker tag
         id: dockertag
-        uses: tmelliottjr/extract-regex-action@v1.4.0
+        uses: tmelliottjr/extract-regex-action@v1.5.0
         with:
           regex: ':(.*)'
           flags: "gm"
